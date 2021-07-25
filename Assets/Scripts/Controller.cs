@@ -17,19 +17,19 @@ public class Controller : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        ParticlesPlay();
+       // ParticlesPlay();
     }
 
-    private void ParticlesPlay()
-    {
-        if(Input.GetKeyDown(KeyCode.Space))
-        {
-            cubesPositions = new List<GameObject>();
-            for (int i = 0; i < particles.Length; i++)
-            {
-               cubesPositions.Add(Instantiate(particles[i]) as GameObject);
-            }
+    //private void ParticlesPlay()
+    //{
+    //    if(Input.GetKeyDown(KeyCode.Space))
+    //    {
+    //        cubesPositions = new List<GameObject>();
+    //        for (int i = 0; i < particles.Length; i++)
+    //        {
+    //           cubesPositions.Add(Instantiate(particles[i]) as GameObject);
+    //        }
  
-        }
-    }
+    //    }
+    //}
 }
